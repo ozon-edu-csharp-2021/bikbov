@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "merchandise-service", "merchandise-service\merchandise-service.csproj", "{EF0DA72F-11FE-42AA-B2E3-808DD2E45A6F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7D98D456-7DE3-4799-AC9F-2324548CBEB8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{3326A34B-EC39-49EC-A2C6-B2353924893A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{D53023A3-6770-4346-81C5-581119E92B02}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common", "common", "{C9076C4B-DA46-4785-AAD9-8EAEE232E0A7}"
+ProjectSection(SolutionItems) = preProject
+	Dockerfile = Dockerfile
+	.dockerignore = .dockerignore
+EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "deploy", "deploy", "{5C83AAF0-3394-46BF-82F7-163ECE9E3570}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF0DA72F-11FE-42AA-B2E3-808DD2E45A6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF0DA72F-11FE-42AA-B2E3-808DD2E45A6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF0DA72F-11FE-42AA-B2E3-808DD2E45A6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF0DA72F-11FE-42AA-B2E3-808DD2E45A6F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EF0DA72F-11FE-42AA-B2E3-808DD2E45A6F} = {7D98D456-7DE3-4799-AC9F-2324548CBEB8}
+	EndGlobalSection
+EndGlobal
