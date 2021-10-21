@@ -13,8 +13,6 @@ services:
   stock-api:
     image: 'ghcr.io/ozon-edu-csharp-2021/stock-api:main'
     hostname: stock-api
-    ports:
-      - "8080:80"
 
   supply-service:
     image: 'ghcr.io/ozon-edu-csharp-2021/supply-service:main'
@@ -23,7 +21,12 @@ services:
       - stock-api
 
   merchandise-service:
-    image: 'ghcr.io/ozon-edu-csharp-2021/stock-api:main'
-    hostname: stock-api
+    build:
+      dockerfile: Dockerfile
+      context: ./MerchandiseService
+    image: merchandise-service
+    hostname: merchandise-service
+    ports:
+      - "8090:8080"
     depends_on:
       - stock-api

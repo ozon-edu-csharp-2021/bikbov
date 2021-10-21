@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "merchandise-service", "merchandise-service\merchandise-service.csproj", "{EF0DA72F-11FE-42AA-B2E3-808DD2E45A6F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MerchandiseService", "MerchandiseService\MerchandiseService.csproj", "{EF0DA72F-11FE-42AA-B2E3-808DD2E45A6F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7D98D456-7DE3-4799-AC9F-2324548CBEB8}"
 EndProject

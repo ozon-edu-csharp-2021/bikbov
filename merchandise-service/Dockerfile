@@ -5,14 +5,14 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR /src
-COPY ["merchandise-service/merchandise-service.csproj", "merchandise-service/"]
-RUN dotnet restore "merchandise-service/merchandise-service.csproj"
+COPY ["MerchandiseService/MerchandiseService.csproj", "MerchandiseService/"]
+RUN dotnet restore "MerchandiseService/MerchandiseService.csproj"
 COPY . .
-WORKDIR "/src/merchandise-service"
-RUN dotnet build "merchandise-service.csproj" -c Release -o /app/build
+WORKDIR "/src/MerchandiseService"
+RUN dotnet build "MerchandiseService.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "merchandise-service.csproj" -c Release -o /app/publish
+RUN dotnet publish "MerchandiseService.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
